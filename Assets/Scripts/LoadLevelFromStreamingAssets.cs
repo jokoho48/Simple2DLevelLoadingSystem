@@ -9,10 +9,10 @@ public class LoadLevelFromStreamingAssets : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		loadLevelCore levelLoadedCore = GetComponent<loadLevelCore>();
+		LoadLevel levelLoadedCore = GetComponent<LoadLevel>();
 		if (levelLoadedCore == null) {
-			gameObject.AddComponent <loadLevelCore>();
-			levelLoadedCore = GetComponent<loadLevelCore>();
+			gameObject.AddComponent <LoadLevel>();
+			levelLoadedCore = GetComponent<LoadLevel>();
 		};
 		SimpleLevel Level = new SimpleLevel(LevelPath);
 		//Level.textureFilePaths = LevelPath;

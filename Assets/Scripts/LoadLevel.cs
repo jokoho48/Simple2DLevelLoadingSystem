@@ -2,7 +2,8 @@
 using System.Collections;
 using System.IO;
 using System.Collections.Generic;
-public class loadLevelCore : MonoBehaviour
+
+public class LoadLevel : MonoBehaviour
 {
 	[HideInInspector]
 	private SimpleLevelDictionary[] _LevelGeometryDictonary = new SimpleLevelDictionary[0];
@@ -14,11 +15,6 @@ public class loadLevelCore : MonoBehaviour
 	public SimpleLevel SimpleLevel;
 	[HideInInspector]
 	public Dictionary<Color32, GameObject> LevelGeometryDictonaryReal = new Dictionary<Color32, GameObject>();
-
-	void Start()
-	{
-		// createLevelDictionary();
-	}
 
 	public void createLevelDictionary()
 	{

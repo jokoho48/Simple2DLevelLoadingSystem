@@ -10,10 +10,10 @@ public class LoadLevelFromTexture : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		loadLevelCore levelLoadedCore = GetComponent<loadLevelCore>();
+		LoadLevel levelLoadedCore = GetComponent<LoadLevel>();
 		if (levelLoadedCore == null) {
-			this.gameObject.AddComponent <loadLevelCore>();
-			levelLoadedCore = GetComponent<loadLevelCore>();
+			this.gameObject.AddComponent <LoadLevel>();
+			levelLoadedCore = GetComponent<LoadLevel>();
 		};
 		SimpleLevel Level = new SimpleLevel(LevelTexture);
 		//Level.TextureFile = LevelPath;
